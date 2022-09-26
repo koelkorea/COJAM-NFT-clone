@@ -1,0 +1,226 @@
+@import url('common.css');
+
+.invisibility {
+    visibility: hidden;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+
+.nav {
+    background-color: rgba(31,30,28,.9019607843137255);
+    transition: .5s ease-in-out;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.nav-wrapper {
+    height: 80px;
+}
+
+.nav-mobile {
+    background-color: rgba(31,30,28,.9019607843137255);
+    transition: .5s ease-in-out;
+}
+
+
+.header-zindex {
+    z-index: 9;
+}
+
+.fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.full, .max-width {
+    width: 100%;
+}
+
+.header-height {
+    height: 80px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.col, .row {
+    display: flex;
+}
+
+
+.st3 {
+    fill: #FFFFFF;
+}
+
+.st1 {
+    fill: #16AA56;
+}
+
+.st2 {
+    fill: #FFB703;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.neturals-5 {
+    color: #e1e1e1;
+}
+
+.to-color-white-hover {
+    transition: color .15s ease-in-out;
+}
+
+
+
+.nav .menu-item+.menu-item {
+    margin-left: 4rem;
+}
+
+
+.nav .search-bar {
+    z-index: 12;
+}
+
+
+.padding-row-48 {
+    padding-left: 3.6rem;
+    padding-right: 3.6rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+.width-24 {
+    width: 1.5rem;
+}
+
+
+.nav .search-bar {
+    z-index: 12;
+}
+
+
+.white {
+    color: #fafafa;
+}
+.background-primary-hover {
+    transition: background-color .15s ease-in;
+}
+.background-primary {
+    background-color: #16aa56;
+}
+.border-radius-10 {
+    border-radius: 10px;
+}
+.border-none {
+    border: none;
+}
+.padding-row-12 {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+}
+.padding-col-8 {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+
+.nav .search-bar .user-input {
+    padding: 0;
+    background-color: transparent;
+    color: #fafafa;
+    transition: width .15s ease-in;
+}
+[role=button], a, area, button, input:not([type=range]), label, select, summary, textarea {
+    touch-action: manipulation;
+}
+
+input[type=number], input[type=password], input[type=text], textarea {
+    -webkit-appearance: none;
+}
+.border-none {
+    border: none;
+}
+.outline-none {
+    outline: none;
+}
+
+.font-16 {
+    font-size: 1rem;
+}
+
+@media screen and (max-width : 1400px){
+    html {font-size:13px} 
+}
+
+@media screen and (max-width : 1180px){
+    html {font-size:11px} 
+}
+
+@media screen and (max-width : 1080px){
+    html {font-size:10px} 
+}
+
+.width-0 {
+    width: 0;
+}
+button, input {
+    overflow: visible;
+}
+
+
+
+.white {
+    color: #fafafa;
+}
+.background-primary-hover {
+    transition: background-color .15s ease-in;
+}
+.background-primary {
+    background-color: #16aa56;
+}
+.border-radius-10 {
+    border-radius: 10px;
+}
+.border-none {
+    border: none;
+}
+.padding-row-12 {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+}
+.padding-col-8 {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+.nav .search-bar .icon {
+    top: -3px;
+    left: -0.5rem;
+    transition: left .15s ease-in-out,fill .15s ease-in-out;
+    fill: #c4c4c4;
+}
+
+.nav .hamburger {
+    display: inline-block;
+    border: none;
+    background: none;
+}
+.link {
+    cursor: pointer;
+}

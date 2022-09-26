@@ -1,0 +1,31 @@
+@import url('common.css');
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-neturals-6 {
+    background-color: #f4f4f4;
+}
+
+.padding-24 {
+    padding: 1.8rem;
+}
+
+.art-detail {
+    margin-top: 80px;
+}
+
+.art-detail .art-media {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+@media only screen and (max-width: 684px){
+    .art-detail .art-media {
+        width: 364px;
+        height: 364px;
+    }
+}

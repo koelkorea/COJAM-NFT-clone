@@ -1,0 +1,83 @@
+@import url('common.css');
+
+.CTblue{fill:#124CC4;}
+.CTwhite{fill:#FFFFFF;}
+
+.pc-ver {
+    max-width: 760px;
+}
+
+.general-detail {
+    width: 100%;
+    top: 9rem;
+}
+
+.general-detail .title {
+    line-height: 1.1;
+    font-size: 3.5rem;
+}
+.poppins, .title {
+    font-family: "Poppins";
+}
+h2 {
+    font-size: 2.125rem;
+}
+
+.general-detail .description, .general-detail .infos {
+    line-height: 1.8;
+}
+
+.top-48 {
+    margin-top: 3.6rem;
+}
+
+b, h1, h2, h3, h4, h5, h6, p, span, strong {
+    margin: 0;
+    font-weight: 400;
+}
+
+.general-detail .artist-info {
+    border-top: 1px solid #e1e1e1;
+}
+.padding-top-48 {
+    padding-top: 3.6rem;
+}
+.top-48 {
+    margin-top: 3.6rem;
+}
+
+.profile {
+    width: 64px;
+    height: 64px;
+}
+.border-50 {
+    border-radius: 50%;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.col {
+    flex-direction: column;
+}
+.left-24, .margin-row-24 {
+    margin-left: 1.8rem;
+}
+
+.bold, .bold * {
+    font-weight: 600!important;
+}
+
+.line-height-24 {
+    line-height: 24px;
+}
+.text-left {
+    text-align: left;
+}
+.lighter-grey {
+    color: #9e9e9e;
+}
+.top-8 {
+    margin-top: 0.6rem;
+}
