@@ -52,7 +52,9 @@ export default function Auth() {
                         </div>
                         <div className="info overflow-ellipsis">
                             <span className="label font-weight-600">Contract</span>
-                            <span className="text overflow-ellipsis">{contractData.address}</span>
+                            <div className="row">
+                                <span className="text overflow-ellipsis">{contractData.address}</span>
+                            </div>
                         </div>
                     </div>
                     <div className="auth-links justify-between">
@@ -124,7 +126,9 @@ export default function Auth() {
                         </div>
                         <div className="info overflow-ellipsis">
                             <span className="label font-weight-600">Contract</span>
-                            <span className="text overflow-ellipsis">{contractData.address}</span>
+                            <div className="row">
+                                <span className="text overflow-ellipsis">{contractData.address}</span>
+                            </div>
                         </div>
                     </div>
                     <div className="auth-links-mobile justify-between">

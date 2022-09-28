@@ -102,7 +102,7 @@ export default function Header() {
                                         <path fillRule="evenodd" clipRule="evenodd"d="M3.75 10.97C3.75 6.98229 6.98229 3.75 10.97 3.75C14.9577 3.75 18.19 6.98229 18.19 10.97C18.19 14.9577 14.9577 18.19 10.97 18.19C6.98229 18.19 3.75 14.9577 3.75 10.97ZM10.97 1.75C5.87772 1.75 1.75 5.87772 1.75 10.97C1.75 16.0623 5.87772 20.19 10.97 20.19C13.1559 20.19 15.1641 19.4294 16.7444 18.1584L20.543 21.957C20.9335 22.3475 21.5667 22.3475 21.9572 21.957C22.3478 21.5665 22.3478 20.9333 21.9572 20.5428L18.1586 16.7441C19.4295 15.1639 20.19 13.1558 20.19 10.97C20.19 5.87772 16.0623 1.75 10.97 1.75Z"></path>
                                     </svg>
                                 </div>
-                                <input className="user-input width-0 border-none outline-none placeholder-neturals-4 font-16 invisibility" type="text" placeholder="Search..." value="" />
+                                <input className="user-input width-0 border-none outline-none placeholder-neturals-4 font-16 invisibility" type="text" placeholder="Search..." value="" readOnly />
                                 <div className="close absolute opacity-0 link invisibility">
                                     <svg width="10" height="10" viewBox="0 0 10 10" fill="#FF312D" xmlns="http://www.w3.org/2000/svg" className="icon">
                                         <path fillRule="evenodd" clipRule="evenodd"
@@ -180,7 +180,7 @@ export default function Header() {
                                         <path fillRule="evenodd" clipRule="evenodd"d="M3.75 10.97C3.75 6.98229 6.98229 3.75 10.97 3.75C14.9577 3.75 18.19 6.98229 18.19 10.97C18.19 14.9577 14.9577 18.19 10.97 18.19C6.98229 18.19 3.75 14.9577 3.75 10.97ZM10.97 1.75C5.87772 1.75 1.75 5.87772 1.75 10.97C1.75 16.0623 5.87772 20.19 10.97 20.19C13.1559 20.19 15.1641 19.4294 16.7444 18.1584L20.543 21.957C20.9335 22.3475 21.5667 22.3475 21.9572 21.957C22.3478 21.5665 22.3478 20.9333 21.9572 20.5428L18.1586 16.7441C19.4295 15.1639 20.19 13.1558 20.19 10.97C20.19 5.87772 16.0623 1.75 10.97 1.75Z"></path>
                                     </svg>
                                 </div>
-                                <input className="user-input width-0 border-none outline-none placeholder-neturals-4 font-16 invisibility" type="text" placeholder="Search..." value="" />
+                                <input className="user-input width-0 border-none outline-none placeholder-neturals-4 font-16 invisibility" type="text" placeholder="Search..." value="" readOnly />
                                 <div className="close absolute opacity-0 link invisibility">
                                     <svg width="10" height="10" viewBox="0 0 10 10" fill="#FF312D" xmlns="http://www.w3.org/2000/svg" className="icon">
                                         <path fillRule="evenodd" clipRule="evenodd"

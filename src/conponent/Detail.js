@@ -43,7 +43,7 @@ export default function Detail() {
                 <div className="infos top-24">
                     <div className="info">
                         <span className="label">Created year: </span>
-                        <span className="text">{ ContractYear }</span>
+                        <span className="text">{ !ContractYear ? 'Loading..' : ContractYear }</span>
                     </div>
                     <div className="info">
                         <span className="label">Edition: </span>
@@ -69,7 +69,7 @@ export default function Detail() {
                 <div className="infos top-24">
                     <div className="info">
                         <span className="label">Created year: </span>
-                        <span className="text">{ ContractYear }</span>
+                        <span className="text">{ !ContractYear ? 'Loading..' : ContractYear }</span>
                     </div>
                     <div className="info">
                         <span className="label">Edition: </span>
