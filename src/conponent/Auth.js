@@ -30,7 +30,7 @@ export default function Auth() {
             console.error(error);
             alert("연결이 지연되거나, 문제가 있을 수 있습니다. 다시 한번 확인 부탁드리겠습니다.");
         });
-    }, [priceData]);
+    }, []);
 
 
     return (
