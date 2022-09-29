@@ -8,21 +8,24 @@
     display: inline-block;
 }
 
+@media screen and (min-width: 1100px) {
+    .nav {
+        background-color: rgba(31,30,28,.9019607843137255);
+        transition: .5s ease-in-out;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
 
-.nav {
-    background-color: rgba(31,30,28,.9019607843137255);
-    transition: .5s ease-in-out;
-    padding-left: 150px;
-    padding-right: 150px;
+@media screen and (max-width: 1100px) {
+    .nav {
+        background-color: rgba(31,30,28,.9019607843137255);
+        transition: .5s ease-in-out;
+    }
 }
 
 .nav-wrapper {
     height: 80px;
-}
-
-.nav-mobile {
-    background-color: rgba(31,30,28,.9019607843137255);
-    transition: .5s ease-in-out;
 }
 
 
@@ -223,4 +226,22 @@ button, input {
 }
 .link {
     cursor: pointer;
+}
+
+@media screen and (max-width : 1100px){
+    .user-status .join {
+        display: none;
+    }  
+}
+
+@media screen and (min-width : 1100px){
+    .user-status .connect{
+        display: none;
+    }  
+}
+
+@media screen and (max-width : 1100px){
+    .nav-wrapper .menus .menu-list {
+        display: none;
+    }  
 }
