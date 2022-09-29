@@ -1,5 +1,4 @@
 import '../style/History.css';
-import { Mobile, PC } from "./MediaQuery.js";
 
 export default function History() {
     

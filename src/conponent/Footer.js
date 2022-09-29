@@ -1,5 +1,4 @@
 import '../style/Footer.css';
-import { Mobile, PC } from "./MediaQuery.js";
 
 export default function Footer() {
     

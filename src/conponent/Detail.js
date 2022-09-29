@@ -1,5 +1,4 @@
 import '../style/Detail.css';
-import { Mobile, PC } from "./MediaQuery.js";
 
 export default function Detail(props) {
 

@@ -1,5 +1,4 @@
 import '../style/Header.css';
-import { Mobile, PC } from "./MediaQuery.js";
 import { useState } from 'react';
 
 export default function Header() {
