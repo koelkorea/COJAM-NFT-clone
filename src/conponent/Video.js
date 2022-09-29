@@ -6,7 +6,7 @@ export default function Video(props) {
 
         <section className="centered background-neturals-6">
             <div className="padding-24">
-                <img className="art-media link" src={props.contractData.image_url} />
+                <img className="art-media link" src={ props.data? props.data.asset_contract.image_url : 'Loading'} />
             </div>
         </section>
 

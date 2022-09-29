@@ -13,7 +13,7 @@ export default function Auth(props) {
                         <div className="info overflow-ellipsis">
                             <span className="label font-weight-600">ID#</span>
                             <div className="row">
-                                <button type="button" aria-describedby="copy">{props.data.id}</button>
+                                <button type="button" aria-describedby="copy">{ props.data ? props.data.id : "loading..."}</button>
                                 <div className="arrow-box-wrapper">
                                     <span className="arrow-box white title font-weight-700 left-12 border-radius-4 padding-row-12 padding-col-4 z-1 display-none">Copy</span>
                                 </div>
@@ -22,7 +22,7 @@ export default function Auth(props) {
                         <div className="info overflow-ellipsis">
                             <span className="label font-weight-600">Contract</span>
                             <div className="row">
-                                <span className="text overflow-ellipsis">{props.contractData.address}</span>
+                                <span className="text overflow-ellipsis">{props.data ? props.data.asset_contract.address : "loading..."}</span>
                             </div>
                         </div>
                     </div>
@@ -58,8 +58,8 @@ export default function Auth(props) {
                                 </g>
                             </svg>
                             <div className="price-main left-16">
-                                <div className="font-12  lighter-grey line-height-20 row align-center">$ { props.priceData.usd_price }</div>
-                                <div className="black font-weight-600 line-height-24 row align-center">{ props.priceData.eth_price } ETH</div>
+                                <div className="font-12  lighter-grey line-height-20 row align-center">$ { props.data ? props.data.collection.payment_tokens[0].usd_price  : "loading..."}</div>
+                                <div className="black font-weight-600 line-height-24 row align-center">{ props.data ? props.data.collection.payment_tokens[0].eth_price  : "loading..."} ETH</div>
                             </div>
                         </div>
                     </div>
