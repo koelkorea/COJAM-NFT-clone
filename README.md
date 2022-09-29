@@ -1,8 +1,9 @@
-# COJAM-NFT 
+# COJAM-NFT-CLONE 하는 토이 프로젝트
 
 ## 작업에 사용한 모듈
 > - npx create-react-app 명령어에 필요한 기본 react 패키지
 > - axios : opensea API 사용 용도
+
 
 ## 테스트 구동에 필요한 절차 
 
@@ -12,7 +13,21 @@
 > 4. npm i 명령어을 통해, 필요한 모듈을 다운로드
 > 5. npm start를 통해 react 프로젝트 서버 구동 후 http://localhost:3000 에 접근
 
-## 작업 후 얻은 교훈
+
+## 화면 및 주요 구현 기능
+
+### 1. 반응형 레이아웃 구현
+#### - 브라우저 사이즈 조절을 통한 시현
+![image](https://user-images.githubusercontent.com/82797695/193113657-927486d7-419b-4f31-91e7-60d401f4e1c6.gif)
+#### - 모바일 시뮬레이션을 통한 시현
+![image](https://user-images.githubusercontent.com/82797695/193113655-62a0cee3-9113-471d-918d-6f24007a3382.gif)
+
+### 2. 조건부 애니메이션 구현
+![image](https://user-images.githubusercontent.com/82797695/193113646-98ec7ce9-1031-49dd-a508-97c8fc47732f.gif)
+![image](https://user-images.githubusercontent.com/82797695/193113651-818029e3-8278-47f6-be3d-ba9a1c614fe0.gif)
+
+
+## 작업(공부) 중 얻은 교훈
 ### 1. state변수는 변화시 화면 rerender의 조건 
   > - 어지간하면 정말 중요한 값을 받아서 담는 경우에 해당하는 경우에 한해서 작성해야 함
   > - 너무 많으면 rendering 통제가 힘들며, spa를 쓰는 이유가 없어짐
