@@ -149,6 +149,15 @@
     color: #fafafa;
     transition: width .15s ease-in;
 }
+
+.nav .search-bar .icon.active {
+    left: -1.75rem;
+}
+
+.nav .search-bar .user-input.active {
+    width: 9rem;
+}
+
 [role=button], a, area, button, input:not([type=range]), label, select, summary, textarea {
     touch-action: manipulation;
 }
@@ -217,6 +226,21 @@ button, input {
     left: -0.5rem;
     transition: left .15s ease-in-out,fill .15s ease-in-out;
     fill: #c4c4c4;
+}
+
+.nav .search-bar .close {
+    top: 2px;
+    right: -34px;
+    transition: opacity .1s ease-in-out,right .1s ease-in-out;
+}
+
+.nav .search-bar .close.active {
+    right : 0;
+    opacity: 1;
+}
+
+.opacity-0 {
+    opacity: 0;
 }
 
 .nav .hamburger {

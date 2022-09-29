@@ -3,12 +3,19 @@ import { useState } from 'react';
 
 export default function Header() {
 
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpenMenu, setIsOpenMenu] = useState(false);
+    const [isOpenSearch, setIsOpenSearch] = useState(false);
 
-    function toggleSwitch() {
+    function toggleMenu() {
         
-        setIsOpen(!isOpen);
-        console.log(isOpen);
+        setIsOpenMenu(!isOpenMenu);
+        console.log(isOpenMenu);
+    }
+
+    function toggleSearch() {
+        
+        setIsOpenSearch(!isOpenSearch);
+        console.log(isOpenSearch);
     }
 
     return (
@@ -81,15 +88,15 @@ export default function Header() {
                             </li>
                         </ul>
                         <div className="search-bar relative padding-row-48">
-                            <div className="input-wrapper relative">
+                            <div className="input-wrapper relative" >
                                 <div className="icon-wrapper">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="icon search absolute width-24 link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={ toggleSearch } className={"icon search absolute width-24 link"  + (isOpenSearch ? " active" : "") } >
                                         <path fillRule="evenodd" clipRule="evenodd"d="M3.75 10.97C3.75 6.98229 6.98229 3.75 10.97 3.75C14.9577 3.75 18.19 6.98229 18.19 10.97C18.19 14.9577 14.9577 18.19 10.97 18.19C6.98229 18.19 3.75 14.9577 3.75 10.97ZM10.97 1.75C5.87772 1.75 1.75 5.87772 1.75 10.97C1.75 16.0623 5.87772 20.19 10.97 20.19C13.1559 20.19 15.1641 19.4294 16.7444 18.1584L20.543 21.957C20.9335 22.3475 21.5667 22.3475 21.9572 21.957C22.3478 21.5665 22.3478 20.9333 21.9572 20.5428L18.1586 16.7441C19.4295 15.1639 20.19 13.1558 20.19 10.97C20.19 5.87772 16.0623 1.75 10.97 1.75Z"></path>
                                     </svg>
                                 </div>
-                                <input className="user-input width-0 border-none outline-none placeholder-neturals-4 font-16 invisibility" type="text" placeholder="Search..." value="" readOnly />
-                                <div className="close absolute opacity-0 link invisibility">
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="#FF312D" xmlns="http://www.w3.org/2000/svg" className="icon">
+                                <input className={"user-input width-0 border-none outline-none placeholder-neturals-4 font-16"  + (isOpenSearch ? " active" : " invisibility") } type="text" placeholder="Search..." value=""  readOnly />
+                                <div className={"close absolute opacity-0 link" + (isOpenSearch ? " active" : " invisibility") } >
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="#FF312D" xmlns="http://www.w3.org/2000/svg" className="icon" onClick={ toggleSearch }>
                                         <path fillRule="evenodd" clipRule="evenodd"
                                             d="M0.209209 0.20921C0.488155 -0.0697364 0.940416 -0.0697364 1.21936 0.20921L5 3.98985L8.78064 0.209209C9.05958 -0.0697365 9.51184 -0.0697365 9.79079 0.209209C10.0697 0.488155 10.0697 0.940416 9.79079 1.21936L6.01015 5L9.79079 8.78064C10.0697 9.05958 10.0697 9.51184 9.79079 9.79079C9.51184 10.0697 9.05958 10.0697 8.78064 9.79079L5 6.01015L1.21936 9.79079C0.940416 10.0697 0.488155 10.0697 0.20921 9.79079C-0.0697364 9.51184 -0.0697364 9.05958 0.20921 8.78064L3.98985 5L0.209209 1.21936C-0.0697365 0.940416 -0.0697365 0.488155 0.209209 0.20921Z">
                                         </path>
@@ -102,7 +109,7 @@ export default function Header() {
                                 <button className="login padding-row-12 padding-col-8 border-none border-radius-10 background-primary white background-primary-hover link">CONNECT</button>
                             </div>
                             <div className="connect">
-                                <button className="hamburger link" onClick={ toggleSwitch }>
+                                <button className="hamburger link" onClick={ toggleMenu }>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
                                         <path d="M2 11H22V13H2zM2 5H22V7H2zM2 17H22V19H2z" fill="#ffffff"></path>
                                     </svg>
@@ -112,7 +119,7 @@ export default function Header() {
                     </div>
                 </div>
             </header>    
-            <aside className={ "mobile-menu-wrap max-width max-height overflow-y-scroll" + (isOpen ? " activate-mobile" : "") } >
+            <aside className={ "mobile-menu-wrap max-width max-height overflow-y-scroll" + (isOpenMenu ? " activate-mobile" : "") } >
                 <ul className="mobile-menu-list-wrapper max-height padding-top-12 padding-bottom-32 padding-row-32 col align-center text-center white">
                     <li className="mobile-menu-list padding-col-12 link">Home</li>
                     <li className="mobile-menu-list padding-col-12 link">Market</li>
