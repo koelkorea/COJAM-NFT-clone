@@ -10,20 +10,7 @@ export default function Header() {
         
         setIsOpen(!isOpen);
         console.log(isOpen);
-        // toggleDone();
     }
-
-    // function toggleDone() {
-
-    //     if(isToggle) {
-
-    //         document.querySelector("aside").classList.add('activate-mobile');
-            
-    //     }else {
-    //         document.querySelector("aside").classList.remove('activate-mobile');
-    //     };
-
-    // }
 
     return (
         <>

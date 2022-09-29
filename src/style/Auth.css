@@ -1,16 +1,23 @@
 @import url('common.css');
 
+@media screen and (max-width : 1100px){
+    .ver-view {
+        margin-top: 120px;
+    }
+}
 
-.mobile-ver {
-    margin-top: 120px;
+@media screen and (min-width : 1100px){
+    .ver-view {
+        max-width: 760px;
+    }
 }
-.pc-ver {
-    max-width: 760px;
-}
+
+
 .art-auth .auth-wrapper {
     border: 1px solid #e1e1e1;
     padding: 64px;
 }
+
 
 .border-radius-24 {
     border-radius: 24px;
@@ -51,18 +58,23 @@
     width: 100px;
 }
 
-.art-auth .auth-wrapper .auth-links {
-    display: flex;
-    margin-top: 96px;
+@media screen and (min-width : 1100px){
+    .art-auth .auth-wrapper .auth-links {
+        display: flex;
+        margin-top: 96px;
+    }
 }
-.art-auth .auth-wrapper .auth-links-mobile {
-    display: column;
-    margin-top: 32px;
+@media screen and (max-width : 1100px){
+    .art-auth .auth-wrapper .auth-links {
+        display: block;
+        margin-top: 32px;   
+    }
+
+    .scan-link {
+        padding-bottom: 16px;
+    }
 }
 
-.art-auth .auth-wrapper .auth-links-mobile .scan-link-mobile {
-    padding-bottom: 16px;
-}
 
 .left-16, .margin-row-16 {
     margin-left: 1.2rem;
@@ -178,12 +190,6 @@
 
 .art-auth .auth-wrapper .price-container .price-content {
     margin-top: 48px;
-}
-
-
-.art-auth .auth-wrapper .auth-links {
-    display: flex;
-    margin-top: 96px;
 }
 
 .download {
